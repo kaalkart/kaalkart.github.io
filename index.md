@@ -8,7 +8,7 @@ I am an international MA student enrolled in the programme of Linguistic Diversi
 
 ## Find me on
 
-[LinkedIn](linkedin.com/in/kärt-kaal-81179b225), [GitHub](https://github.com/kaalkart)
+[LinkedIn](https://www.linkedin.com/in/k%C3%A4rt-kaal-81179b225/), [GitHub](https://github.com/kaalkart)
 
 ## Contact
 
