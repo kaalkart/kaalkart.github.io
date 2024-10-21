@@ -36,6 +36,8 @@ My email address is of the form kart.kaal@helsinki.fi.
 
 [Natural Language Processing for Linguists](https://studies.helsinki.fi/courses/course-implementation/hy-cur-aili-20240313044006/ENG-503), summer 2024 
 
+[Command-Line Tools for Linguists](https://studies.helsinki.fi/courses/course-implementation/hy-opt-cur-2425-261401a1-c550-4436-91b9-7edf4a1a3b57/KIK-LG221), fall 2024
+
 ## Projects
 
 [Exploratory project about the different contexts human bodies appear in Japanese novels](https://github.com/kaalkart/ComputationalLiteracy)
