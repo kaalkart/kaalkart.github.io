@@ -4,7 +4,7 @@ layout: default
 
 ## Introduction
 
-I am an international MA student enrolled in the programme of Linguistic Diversity and Digital Humanities at the University of Helsinki. More specifically in the study track of Digital Humanities. My previous background is in Japanese language and culture studies with a minor in Anthropology. My interests lie broadly in everything related to language, computational methods in humanities, Japanese language, Japanese culture, but also a bit more specifically in the fields of Second Language Acquisition and Computer-Assisted Language Learning. I came to Helsinki to combine my previous background with a bit more diverse skills needed in the current job market, e.g. computational knowledge as a humanitarian.
+I am an international MA student enrolled in the programme of Linguistic Diversity and Digital Humanities at the University of Helsinki. More specifically in the study track of Digital Humanities. My previous background is in Japanese language and culture studies with a minor in Anthropology. My interests lie broadly in everything related to language, computational methods in humanities, Japanese language and Japanese culture. Recently I have developed an interest related to the fields of Second Language Acquisition and Computer-Assisted Language Learning which I hope to somehow study in my thesis.
 
 ## Find me on
 
