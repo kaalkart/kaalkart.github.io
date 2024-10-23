@@ -50,7 +50,7 @@ brew install wget
 brew install python3
 ```
 
-We were also introduced to using text editors via the terminal. In this case we used nano to edit text files:
+We were also introduced to using text editors via the terminal. In this case we could use either emacs or nano to edit text files, I went with nano:
 
 ```
 nano <file_name>.txt
@@ -63,7 +63,7 @@ PS. For me it also meant that I learned to open Ubuntu to get to the terminal an
 
 Like the title says, second week was about getting to know more about the file system of UNIX. More specifically we looked into some of the same commands that were brought out in the previous week's lesson, but it was brought out how to do so in such a way that your terminal doesn't give you an error because you are trying to do something to a directory. In that case it's needed to use a few additions:
 
-| command | What it does |
+| Command | What it does |
 | :---: | :--- |
 | cp -R | copies the specified directory |
 | rm -R | deletes the specified directory that is either empty or not |
@@ -81,7 +81,20 @@ This might output something like this to the terminal, showing you what is the p
 /usr/bin/cat
 ```
 
-Then we also learned about processes.
+Then we also learned about processes. The commands associated with that were:
+
+| Command | What it does |
+| :---: | :--- |
+| top | produces the list of currently running processes |
+| sleep N | waits for N seconds to run a command |
+| & | added to the end of a command to start running it in the background |
+| fg | brings a process from the background to the foreground |
+| ps | used to find the identification number of a process |
+| kill -9 | kills the process, make sure to involve the process id in the end |
+
+With the *fg* command,  check [from here](https://www.geeksforgeeks.org/fg-command-in-linux-with-examples/) how to refer to a process.
+
+With the *kill -9* remember to involve the process id in the end!
 <br/><br/>
 
 ### Week 3: Basic Corpus Processing
