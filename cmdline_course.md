@@ -61,7 +61,28 @@ Therefore the course started with a gentle introduction to the command-line and 
 PS. For me it also meant that I learned to open Ubuntu to get to the terminal and got to know how the logo looks like - <br/><br/> <img src="https://cdn.iconscout.com/icon/free/png-512/free-ubuntu-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-freebies-pack-logos-icons-1175076.png?f=webp&w=256" width="100"> <br/><br/>
 ### Week 2: Navigating a UNIX System
 
-Like the 
+Like the title says, second week was about getting to know more about the file system of UNIX. More specifically we looked into some of the same commands that were brought out in the previous week's lesson, but it was brought out how to do so in such a way that your terminal doesn't give you an error because you are trying to do something to a directory. In that case it's needed to use a few additions:
+
+| command | What it does |
+| :---: | :--- |
+| cp -R | copies the specified directory |
+| rm -R | deletes the specified directory that is either empty or not |
+| rmdir | deletes the specified directory if it's empty |
+
+We also used the command *which* which outputs the path of a command to the terminal. You execute it like this:
+ 
+```
+which cat
+```
+
+This might output something like this to the terminal, showing you what is the path of the *cat* command:
+
+```
+/usr/bin/cat
+```
+
+Then we also learned about processes.
+<br/><br/>
 
 ### Week 3: Basic Corpus Processing
 
