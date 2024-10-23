@@ -95,6 +95,15 @@ Then we also learned about processes. The commands associated with that were:
 With the *fg* command,  check [from here](https://www.geeksforgeeks.org/fg-command-in-linux-with-examples/) how to refer to a process.
 
 With the *kill -9* remember to involve the process id in the end!
+
+Lastly we were showed how to use remote servers. In our case we used the Puhti server. For that we also learned a few commands.
+
+```
+ssh puhti.csc.fi
+```
+*NB! For that we needed to first register in Puhti to use our username and password for logging in and getting access to the course's project and the remote server.*
+
+The *quit* command is used to return to your own computer or the <CTRL+D> combination.
 <br/><br/>
 
 ### Week 3: Basic Corpus Processing
