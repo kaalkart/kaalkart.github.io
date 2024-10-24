@@ -133,14 +133,15 @@ But the basic corpus and text file processing commands we used were:
 
 This week built upon the last week, looking into more challenging corpus processing tasks, mostly using regular expressions. The previous week's commands such as *tr* and *egrep* were used in different ways to understand the contents of various text files such as the count of certain words, case variants of a word (like "queens" and "Queens"), sentences with specific words, etc. This was one of the more difficult weeks for me because it took time to get the regular expressions right. The most challenging part beside the unfamiliarity of the commands as a new Ubuntu user was writing the regular expressions that would catch all the needed patterns.
 
-We had one new command this week, which was *sed*:
+We also had one new command this week, which was *sed*:
 
 ```
-sed -nE
+sed -nE '<insert pattern>' <file_name>
 ```
 
-It was often used with *-nE* as *n* would guarantee that not every line of the file is printed besides the ones with the wanted pattern that can be written as a regular expression because of the addition of *E*.
+It was often used with *-nE* as *n* would guarantee that not every line of the file is printed besides the ones with the wanted pattern that can be written as a regular expression because of the addition of *E*. The command can also be used to delete lines, here's a [helpful link](https://phoenixnap.com/kb/sed-delete-line) with the different ways to use the *sed* command for that purpose.
 
+ 
 ### Week 5: Scripting and Configuration Files
 
 ### Week 6: Installing and Running Programs
