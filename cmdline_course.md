@@ -18,7 +18,7 @@ The course taught us a wide array of topics including:
   * project development,
   * building webpages using Jekyll and Github.
 
-The following is a weekly more detailed run-down of introductions of the contents of the course.
+The following is a weekly more detailed run-down of introductions of the contents of the course organised in a way I think I would find useful for a quick recap.
 <br/><br/>
 ## Weekly sections of the course: 
 
@@ -108,6 +108,26 @@ The *quit* command is used to return to your own computer or the <CTRL+D> combin
 
 ### Week 3: Basic Corpus Processing
 
+As it was a course for linguists, we also learned about the ways how to process different text files and use the computer to manipulate the text files.
+
+First of all we looked into how to change the character encodings of a file. You can check the file attributes with the command *file* with the file name after it. We wanted to use the utf-8 encoding which supports many language scripts around the world, including Finnish for example. The files can often be encoded in Latin encoding as well, the most common one being ISO-8859-1,so when a file is in that encoding, then to change it into utf-8, you would use the following command to change the encoding to utf-8 and save the output into a textfile:
+
+```
+iconv -f ISO-8859-1 -t UTF-8 > <file_name>.txt
+``` 
+
+When you end up with some weird symbols, you might have a misalignment between your own system, for example Unix, and the convention that was used when encoding the file, like Windows convention, then you can use the command *dos2unix* to convert the file format.
+
+But the basic corpus and text file processing commands we used were:
+
+| Command | What it does |
+| :---: | :---|
+| tr | used to change characters into other characters or delete them |
+| sort | used to print the output of a file in alphabetical and numerical order |
+| uniq | used to report or delete duplicate lines |
+| egrep | used to search for patterns or regular expressions |
+
+<img src="https://testmatick.com/wp-content/uploads/2021/03/RegEx-Logo.png.webp" width="100"> - we were also introduced regular expressions, check [here](https://regexr.com/) for a great page to test the expressions!<br/><br/>
 ### Week 4: Advanced Corpus Processing
 
 ### Week 5: Scripting and Configuration Files
