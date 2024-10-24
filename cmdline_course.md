@@ -126,9 +126,20 @@ But the basic corpus and text file processing commands we used were:
 | sort | used to print the output of a file in alphabetical and numerical order |
 | uniq | used to report or delete duplicate lines |
 | egrep | used to search for patterns or regular expressions |
+| wc | used to count lines, words, characters |
 
 <img src="https://testmatick.com/wp-content/uploads/2021/03/RegEx-Logo.png.webp" width="100"> - we were also introduced regular expressions, check [here](https://regexr.com/) for a great page to test the expressions!<br/><br/>
 ### Week 4: Advanced Corpus Processing
+
+This week built upon the last week, looking into more challenging corpus processing tasks, mostly using regular expressions. The previous week's commands such as *tr* and *egrep* were used in different ways to understand the contents of various text files such as the count of certain words, case variants of a word (like "queens" and "Queens"), sentences with specific words, etc. This was one of the more difficult weeks for me because it took time to get the regular expressions right. The most challenging part beside the unfamiliarity of the commands as a new Ubuntu user was writing the regular expressions that would catch all the needed patterns.
+
+We had one new command this week, which was *sed*:
+
+```
+sed -nE
+```
+
+It was often used with *-nE* as *n* would guarantee that not every line of the file is printed besides the ones with the wanted pattern that can be written as a regular expression because of the addition of *E*.
 
 ### Week 5: Scripting and Configuration Files
 
