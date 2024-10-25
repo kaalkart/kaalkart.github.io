@@ -165,12 +165,86 @@ For writing and troubleshooting universal scripts, the commands in the next tabl
 | $# | gives the number of parameters that were given |
 | printenv | lists the currently existing environment variables |
 | export | used for setting a new value for an environment variable |
+| source | makes bash read the configuration file that is added after the command so that the variables can be used after during the same session |
+| alias | used to define a shortcut |
 
-*Find a thorough explanation of environment variables and the guide to set the various variables* [from here](https://www.geeksforgeeks.org/environment-variables-in-linux-unix/)!
+The last command can be used like this if you want to use just "puhti" for executing the full "ssh ..." command:
+```
+alias puhti="ssh puhti.csc.fi"
+```
+
+*NB! Find a thorough explanation of environment variables and the guide to set the various variables* [from here](https://www.geeksforgeeks.org/environment-variables-in-linux-unix/)!
 
 The link also has information about editing the configuration file which was the last topic of the week and where everyone set the paths that were needed in their .bashrc file. <br/><br/>
 ### Week 6: Installing and Running Programs
 
+In this week we learned to use administrator-level commands as root user that are at times needed for some processes such as installing new software, etc.
+
+| Command | What it does |
+|:---: | :--- |
+| su | used for changing users, when used without any specification it is assumed that you want to use the root account | sudo | can be added before certain commands to become the root user temporarily |
+| passwd | a new password can be set up for an user |
+| apt-get | used for installing packages in Linux systems |
+| brew | same as apt-get but for MAC OS |
+| locate | used for finding locations of files |
+
+One of the biggest topics of the week was Makefiles that are used to automatically build projects like a program that consists fo several files of codes and text files that are processed with the help of the program codes. At least that was the case in this course.
+<br/><br/> <img src="/assets/img/makefile_example.png" width="800"> <br/><br/>
+In the picture above you can see an example of a Makefile. In this case we first have a list of books that we have as .txt files in a subdirectory in our directory that also contains the Makefile.
+
+The next two lines are another lists that basically take every book name from the list BOOKS and attach every book's name in front of either *.freq.txt* or *.sent.txt*. The % signs are used for universalising the command to work with every book name.
+
+```
+all: $(FREQLISTS) $(SENTEDBOOKS)
+```
+The above line tells the computer that if the user uses the *make* command in the terminal with the addition of *all*, then these are the lists that need to be checked through for files. The same is true for the following part that defines *clean*, where there is a command to delete the files in the *results* directory and the "...no_md.txt" files in the directory called *data* if the user writes *make clean* in the terminal.
+
+The make rules are written down after those. I'll use the first one as an example of them all:
+
+```
+%.no_md.txt: %.txt
+	python3 src/remove_guteberg_metadata.py $< > $@
+```
+
+The rule has a target *%no_md.txt* and dependency *%.txt* on the first line and the second line specifies that command *python3* is used to execute the specified program written in the *.py* code file under the *src* directory.
+
+The *$<* shows the input file for the python program and the *$@* shows that what comes out of the action is to be put in an output file. These files have been defined in the row above it.<br/><br/> 
 ### Week 7: Version Control
 
+The last week before the final assignment we learned about version control which basically means we were shown how to use Github repository and how to get projects from Github to our local machine, and also update the public repository with the different files from our computer. We got a very useful [cheatsheet](https://www.git-tower.com/blog/git-cheat-sheet) with the different commands, but the overall workflow when working on a Git repository can pretty much be summed up with the next three commands:
+
+```
+git add
+```
+Used to add the changes you have made to the next commit.
+
+```
+git commit -m "<insert commit comment for explanation and documentation purposes>"
+``` 
+Commit the changes with the attached comment.
+
+```
+git push
+```
+Publish the changes in the remote repository.
+
+And not to forget, there are things that certainly go wrong at some point when you work with local and remote repositories, so Google is definitely your friend to look to when a command goes wrong!
+<br/><br/>
 ### Final assignment: Building Webpages using Github Pages
+
+The last two weeks was for the final assignment where we used Github and Jekyll to make ourselves a webpage in a project under our Github account. We were taught the basics of [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) with also other helpful links and videos about associated topics that were needed to finish this, and then left to build the page which is the exact same one you have been looking at and reading here all this time!
+
+I now have to only merge my branch cmdline-course with the main branch via
+```
+git merge cmdline-course
+```
+to push the changes to the repository so that this page would become visible outside my side branch as well. As I have been using the command
+
+```
+bundle exec jekyll serve
+```
+for a long time already to see whether the page is working besides the constant git adding, committing and pushing.
+
+As I already said in the beginning, everything in this course and what I wrote about was new to me as I hadn't done these things at my own before - always in a group or pairs as mostly the one watching from the sidelines -, so it was a great opportunity for me to learn to be a bit more computationally independent. It was also very helpful to reflect on everything that I had learned throghout the weeks, so I tried to build this page up to be like a small point of reference to me whenever I need to find the lead to start investigating something I need to do in the future that relates to the content we learned.
+
+**Thank you for the course and your attention!**
