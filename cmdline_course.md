@@ -141,9 +141,34 @@ sed -nE '<insert pattern>' <file_name>
 
 It was often used with *-nE* as *n* would guarantee that not every line of the file is printed besides the ones with the wanted pattern that can be written as a regular expression because of the addition of *E*. The command can also be used to delete lines, here's a [helpful link](https://phoenixnap.com/kb/sed-delete-line) with the different ways to use the *sed* command for that purpose.
 
- 
+When using the commands in tandem, you just have to use the pipe symbols in-between to use them together on a file, like in the [following example](/assets/img/capital_letter_words.png) of a row of commands I used at once to answer a question in the week's quiz about finding words that started with a capital letter.
+<br/><br/>
 ### Week 5: Scripting and Configuration Files
 
+After the regex part, the technical part of the course of this and next week was probably the most time-consuming week for me on the technical side in the sense that I had never written scripts before and especially understanding the syntax of Makefiles took a bit of time. But I do think that with this week's lesson (and with the ones before) my small background of having taken two courses that used the Python programming language somehow helped me to grasp things quicker.
+
+But the idea of scripts, or in our case bash scripts, is such that you can basically write the various commands that you would write inside a terminal into a script file which you can execute promptly instead when you call on the bash file. You can even universalise it, so that you just input the file name which you want to use the commands on that are written in the script.
+
+The bash file has a specific custom to how you write it. The following is an example of a small script I wrote for the week's quiz:<br/><br/> <img src="/assets/img/bash_script_example.png" width="600"> <br/><br/>
+*The logic of the while loop can be found from [this link](https://www.geeksforgeeks.org/bash-scripting-while-loop/) that was also provided to us in the quiz. When it comes to different computational methods, it is often helpful or even needed to keep an open mind and google to get an idea for your solutions. I think it's good to be prepared to find unfamiliar concepts and such when it comes to computational methods as technology and the methods keep developing at a rapid pace. Coputational courses like this one help to come to terms with such situations and keep a cool head. I believe it's a very important skill to have in the current work industry.*
+
+Now, to come back to the example, the first line is a must-have if you write a bash script and the next few lines before the "code" part are comments which are nice to have for anyone that might have a look at the file.
+
+If you want to use bash scripts without the *bash* command in the terminal, you first need to use the command *chmod u+x* and then add the name of the bash file after it.
+
+For writing and troubleshooting universal scripts, the commands in the next table might come in handy. There are also some commands about environment variables which are the system-level variables that exist in your system and that can be used in the different processes.
+
+| Command | What it does |
+|:---: | :--- |
+| $ | marks the place of a parameter, so $1 would be the first parameter given by the user, $2 the second one and so on |
+| $? | gives the last $? environmental value |
+| $# | gives the number of parameters that were given |
+| printenv | lists the currently existing environment variables |
+| export | used for setting a new value for an environment variable |
+
+*Find a thorough explanation of environment variables and the guide to set the various variables* [from here](https://www.geeksforgeeks.org/environment-variables-in-linux-unix/)!
+
+The link also has information about editing the configuration file which was the last topic of the week and where everyone set the paths that were needed in their .bashrc file. <br/><br/>
 ### Week 6: Installing and Running Programs
 
 ### Week 7: Version Control
