@@ -6,6 +6,8 @@ layout: default
 
 I am an international MA student enrolled in the programme of Linguistic Diversity and Digital Humanities at the University of Helsinki. More specifically in the study track of Digital Humanities. My previous background is in Japanese language and culture studies with a minor in Anthropology. My interests lie broadly in everything related to language, Japanese language, Japanese culture and computational methods in humanities. Recently I have developed a deeper interest related to the fields of Second Language Acquisition and Computer-Assisted Language Learning which I hope to somehow study in my thesis. I came to Helsinki to further develop and combine my background with the needs of the current job market, e.g. computational skills as a humanist/linguist.
 
+[My CV.](/assets/LuxSleek_Kaal_CV.pdf)
+
 ## Find me on
 
 [LinkedIn](https://www.linkedin.com/in/k%C3%A4rt-kaal-81179b225/), [GitHub](https://github.com/kaalkart)
