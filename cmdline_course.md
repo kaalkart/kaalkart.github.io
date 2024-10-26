@@ -1,6 +1,5 @@
 ---
 layout: default
-permalink: /cmdline_course/
 ---
 
 # Command-Line Tools for Linguists, fall 2024, KIK-LG221
