@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /cmdline_course/
 ---
 
 # Command-Line Tools for Linguists, fall 2024, KIK-LG221
@@ -234,7 +235,7 @@ And not to forget, there are things that certainly go wrong at some point when y
 
 The last two weeks was for the final assignment where we used Github and Jekyll to make ourselves a webpage in a project under our Github account. We were taught the basics of [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) with also other helpful links and videos about associated topics that were needed to finish this, and then left to build the page which is the exact same one you have been looking at and reading here all this time!
 
-I now have to only merge my branch cmdline-course with the main branch via
+I now basically have to only merge my branch cmdline-course with the main branch via
 ```
 git merge cmdline-course
 ```
